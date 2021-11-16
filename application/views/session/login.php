@@ -23,11 +23,15 @@
 
 <style>
     body {
+        background-image: url('<?php echo base_url();?>assets/images/collins_background.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
         background:
-            -webkit-linear-gradient(315deg, hsla(0, 4.23%, 86.08%, 1) 0%, hsla(0, 4.23%, 86.08%, 0) 70%),
+            /* -webkit-linear-gradient(315deg, hsla(0, 4.23%, 86.08%, 1) 0%, hsla(0, 4.23%, 86.08%, 0) 70%),
             -webkit-linear-gradient(65deg, hsla(0, 0%, 100%, 1) 10%, hsla(0, 0%, 100%, 0) 80%),
             -webkit-linear-gradient(135deg, hsla(201.61, 63.64%, 50.39%, 1) 15%, hsla(201.61, 63.64%, 50.39%, 0) 80%),
-            -webkit-linear-gradient(205deg, hsla(193.64, 56.9%, 54.51%, 1) 100%, hsla(193.64, 56.9%, 54.51%, 0) 70%);
+            -webkit-linear-gradient(205deg, hsla(193.64, 56.9%, 54.51%, 1) 100%, hsla(193.64, 56.9%, 54.51%, 0) 70%); */
         background:
             linear-gradient(135deg, hsla(0, 4.23%, 86.08%, 1) 0%, hsla(0, 4.23%, 86.08%, 0) 70%),
             linear-gradient(25deg, hsla(0, 0%, 100%, 1) 10%, hsla(0, 0%, 100%, 0) 80%),
@@ -48,6 +52,7 @@
         border-radius: 4px;
         box-shadow: 0 0 6px #ccc;
         background-color: #fff;
+        opacity: 0.9;
     }
 </style>
 
@@ -102,15 +107,19 @@ $languages = $this->polyglot->nativelanguages($this->config->item('languages'));
                 </div>
                 <div class="span6" style="height:100%;">
                     <div class="row-fluid">
+                    <center> 
                         <div class="span12">
                             <img src="<?php echo base_url();?>assets/images/logo_simple.png">
                         </div>
+                        </center>   
                     </div>
                     <div class="row-fluid"><div class="span12">&nbsp;</div></div>
                     <div class="row-fluid">
+                        
                         <div class="span12">
                             <span style="font-size: 250%; font-weight: bold; line-height: 100%;"><center><?php echo lang('Leave Management System');?></center></span>
                         </div>
+                     
                     </div>
                 </div>
             </div>
